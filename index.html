@@ -106,7 +106,7 @@
 
 							<article id="steakhouse">
 								<h2 class="major">벤자민 스테이크하우스🥩</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main"><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdDa6Xr%2FbtsDnzJAixL%2FfRnkzwR98pHKl7j0k0LIr0%2Fimg.jpg" alt="" /></span>
 							</article>
 
 							<article id="naminori">
@@ -423,7 +423,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					const minutes = Math.floor((differenceInTime % (1000 * 60 * 60)) / (1000 * 60));
 					const seconds = Math.floor((differenceInTime % (1000 * 60)) / 1000);
 
-					return `+${days}일`;
+					return `+${days}일${hours}시간${minutes}분${seconds}초`;
 				}
 				function updateTime() {
 					document.getElementById('timePassed').innerText = calculateTimeDifference();
