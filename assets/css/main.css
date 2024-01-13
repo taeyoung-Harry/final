@@ -1151,8 +1151,8 @@ input, select, textarea {
 #bg:before {
 	content: '';
 	display: block;
-	width: 512px; /* 두 배로 키우기 */
-	height: 512px;
+	width: 900px; /* 두 배로 키우기 */
+	height: 900px;
 	border-radius: 50%;
 	-moz-transition: background-color 2.5s ease-in-out;
 	-webkit-transition: background-color 2.5s ease-in-out;
@@ -1178,8 +1178,8 @@ input, select, textarea {
 #bg:after {
 	content: '';
 	display: block;
-	width: 512px; /* 두 배로 키우기 */
-	height: 512px;
+	width: 900px; /* 두 배로 키우기 */
+	height: 900px;
 	border-radius: 50%;
 	-moz-transition: background-color 2.5s ease-in-out;
 	-webkit-transition: background-color 2.5s ease-in-out;
