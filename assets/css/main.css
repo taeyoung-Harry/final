@@ -1678,3 +1678,7 @@ input, select, textarea {
 		input[type="checkbox"]{
 
 		}
+
+		.self_data {
+			width:80%;
+		}
