@@ -1149,11 +1149,11 @@ input, select, textarea {
 		}
 
 #bg:before {
-	content: ''; /* 가상 요소에 내용 없음을 지정합니다. */
-	display: block; /* 가상 요소를 블록 요소로 만듭니다. */
-	width: 256px; /* 원의 지름을 조절할 수 있습니다. */
-	height: 256px;
-	border-radius: 50%; /* 50%로 설정하여 원 모양으로 만듭니다. */
+	content: '';
+	display: block;
+	width: 512px; /* 두 배로 키우기 */
+	height: 512px;
+	border-radius: 50%;
 	-moz-transition: background-color 2.5s ease-in-out;
 	-webkit-transition: background-color 2.5s ease-in-out;
 	-ms-transition: background-color 2.5s ease-in-out;
@@ -1163,27 +1163,41 @@ input, select, textarea {
 	-ms-transition-delay: 0.75s;
 	transition-delay: 0.75s;
 	background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/na4.jpg");
-	background-size: 50% 75%, cover; /* 두 번째 배경 이미지를 cover로 설정하여 이미지가 요소에 맞게 크기 조절됩니다. */
+	background-size: 50% 75%, cover;
 	background-position: center, center;
 	background-repeat: no-repeat, no-repeat;
 	z-index: 2;
+	position: absolute; /* 위치를 조절하기 위해 절대 위치 지정 */
+	top: 50%; /* 위쪽 여백을 50%로 설정 */
+	left: 50%; /* 왼쪽 여백을 50%로 설정 */
+	transform: translate(-50%, -50%); /* 요소의 중심을 화면의 중심으로 이동 */
 }
 
 
+
 #bg:after {
-			-moz-transform: scale(1.125);
-			-webkit-transform: scale(1.125);
-			-ms-transform: scale(1.125);
-			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			z-index: 1;
+	content: '';
+	display: block;
+	width: 512px; /* 두 배로 키우기 */
+	height: 512px;
+	border-radius: 50%;
+	-moz-transition: background-color 2.5s ease-in-out;
+	-webkit-transition: background-color 2.5s ease-in-out;
+	-ms-transition: background-color 2.5s ease-in-out;
+	transition: background-color 2.5s ease-in-out;
+	-moz-transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0.75s;
+	background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/na4.jpg");
+	background-size: 50% 75%, cover;
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	z-index: 2;
+	position: absolute; /* 위치를 조절하기 위해 절대 위치 지정 */
+	top: 50%; /* 위쪽 여백을 50%로 설정 */
+	left: 50%; /* 왼쪽 여백을 50%로 설정 */
+	transform: translate(-50%, -50%); /* 요소의 중심을 화면의 중심으로 이동 */
 		}
 
 		body.is-article-visible #bg:after {
