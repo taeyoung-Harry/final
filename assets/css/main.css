@@ -943,9 +943,11 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #ffffff;
+			/*border: solid 1px #ffffff;
 			border-left: 0;
-			border-right: 0;
+			border-right: 0;*/
+			border-width:1px;
+			border-color:white;
 		}
 		/*
 			table tbody tr:nth-child(2n + 1) {
