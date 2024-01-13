@@ -956,6 +956,8 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75em 0.75em;
+			border-width:1px;
+			border-color:white;
 		}
 
 		table th {
