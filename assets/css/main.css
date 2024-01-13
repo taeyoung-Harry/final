@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
 .list_table{
-	
+
 }
 
 /*
@@ -947,10 +947,12 @@ input, select, textarea {
 			border-left: 0;
 			border-right: 0;
 		}
-
+		/*
 			table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(255, 255, 255, 0.075);
 			}
+
+		 */
 
 		table td {
 			padding: 0.75em 0.75em;
