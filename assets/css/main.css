@@ -1151,9 +1151,9 @@ input, select, textarea {
 #bg:before {
 	content: '';
 	display: block;
-	width: 900px; /* 두 배로 키우기 */
-	height: 900px;
-	border-radius: 50%;
+	width: 700px; /* 두 배로 키우기 */
+	height: 1000px;
+	border-radius: 0;
 	-moz-transition: background-color 2.5s ease-in-out;
 	-webkit-transition: background-color 2.5s ease-in-out;
 	-ms-transition: background-color 2.5s ease-in-out;
