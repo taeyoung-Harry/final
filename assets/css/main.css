@@ -983,9 +983,12 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px #ffffff;
+				/*border: solid 1px #ffffff;
 				border-left-width: 0;
 				border-top-width: 0;
+				 */
+				border-width:1px;
+				border-color:white;
 			}
 
 				table.alt tbody tr td:first-child {
