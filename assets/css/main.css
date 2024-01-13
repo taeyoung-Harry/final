@@ -1,10 +1,16 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+
+.list_table{
+	width:50%;
+	border-collapse: collapsed;
+	background-color:red;
+}
+
 /*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	내가 만든 CSS
+
 */
 
 html, body, div, span, applet, object,
@@ -47,7 +53,6 @@ blockquote, q {
 	}
 
 table {
-	border-collapse: collapse;
 	border-spacing: 0;
 }
 
@@ -1665,11 +1670,6 @@ input, select, textarea {
 
 		/* 내가 만든 CSS */
 
-		#list_table {
-			width:50%;
-			border-collapse: collapsed;
-			background-color:red;
-		}
 		#list_data {
 			padding:10px;
 			border:1px solid #ccc;
