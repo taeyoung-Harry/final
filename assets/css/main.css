@@ -1148,26 +1148,29 @@ input, select, textarea {
 			height: 100%;
 		}
 
-		#bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/na4.jpg");
-			background-size: auto,
- 256px 256px;
-			background-position: center,
- center;
-			background-repeat: no-repeat,
- repeat;
-			z-index: 2;
-		}
+#bg:before {
+	content: ''; /* 가상 요소에 내용 없음을 지정합니다. */
+	display: block; /* 가상 요소를 블록 요소로 만듭니다. */
+	width: 256px; /* 원의 지름을 조절할 수 있습니다. */
+	height: 256px;
+	border-radius: 50%; /* 50%로 설정하여 원 모양으로 만듭니다. */
+	-moz-transition: background-color 2.5s ease-in-out;
+	-webkit-transition: background-color 2.5s ease-in-out;
+	-ms-transition: background-color 2.5s ease-in-out;
+	transition: background-color 2.5s ease-in-out;
+	-moz-transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0.75s;
+	background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/na4.jpg");
+	background-size: 50% 75%, cover; /* 두 번째 배경 이미지를 cover로 설정하여 이미지가 요소에 맞게 크기 조절됩니다. */
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	z-index: 2;
+}
 
-		#bg:after {
+
+#bg:after {
 			-moz-transform: scale(1.125);
 			-webkit-transform: scale(1.125);
 			-ms-transform: scale(1.125);
