@@ -20,6 +20,7 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
+	width:100%;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -982,12 +983,9 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				/*border: solid 1px #ffffff;
+				border: solid 1px #ffffff;
 				border-left-width: 0;
 				border-top-width: 0;
-				 */
-				border-width:1px;
-				border-color:white;
 			}
 
 				table.alt tbody tr td:first-child {
