@@ -27,6 +27,7 @@
 							<ul>
 								<li><a href="#intro">버킷리스트</a></li>
 								<li><a href="#work">버킷리스트🗽</a></li>
+								<li><a href="#celebrate">기념일🎉</a></li>
 								<!--<li><a href="#about">후보2</a></li>
 								<li><a href="#contact">후보3</a></li>
 								<li><a href="#elements">후보4</a></li>-->
@@ -148,6 +149,17 @@
 							<!-- this is article format -->
 						</article>
 
+
+						<article id="celebrate">
+							<h2 style="text-align:center;width:100% " class="major">🎊기념일🎉</h2>
+							<table>
+								<tr><td class="c_font">100❤️</td>
+									<td class="c_font" id="hundred"></td></tr>
+								<tr><td>1</td>
+									<td>1</td></tr>
+							</table>
+
+						</article>
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
@@ -456,7 +468,22 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				}
 				function updateTime() {
 					document.getElementById('timePassed').innerText = calculateTimeDifference();
+					document.getElementById('hundred').innerText = calculatehundred()
 				}
+
+				function calculatehundred() {
+					const startDate = new Date();
+					const currentDate = new Date('2024-2-6');
+
+					const differenceInTime = currentDate - startDate;
+					const days = Math.floor(differenceInTime / (1000 * 60 * 60 * 24));
+					const hours = Math.floor((differenceInTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					const minutes = Math.floor((differenceInTime % (1000 * 60 * 60)) / (1000 * 60));
+					const seconds = Math.floor((differenceInTime % (1000 * 60)) / 1000);
+
+					return `${days}일${hours}시간${minutes}분${seconds}초`;
+				}
+
 				updateTime();
 				setInterval(updateTime, 1000);
 			</script>
