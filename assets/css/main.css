@@ -4,7 +4,7 @@
 .c_font{
 	font-weight: bold;
 	text-align: center;
-	width:50%;
+	width:50% !important;
 }
 /*
 	내가 만든 CSS
