@@ -157,10 +157,10 @@
 									<td id="eungo-birth"></td></tr>
 								<tr><td>태영 생일🎂</td>
 									<td id="taeyoung-birth"></td></tr>
-								<tr><td>100❤</td>
+								<tr><td>100❤️</td>
 									<td id="hundred"></td></tr>
-								<tr><td>추가예정</td>
-									<td>추가예정</td></tr>
+								<tr><td>1주년❤️</td>
+									<td id="one_year"></td></tr>
 							</table>
 
 						</article>
@@ -470,16 +470,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 					return `+${days}일${hours}시간${minutes}분${seconds}초`;
 				}
-				function updateTime() {
-					document.getElementById('timePassed').innerText = calculateTimeDifference();
-					document.getElementById('hundred').innerText = calculate_Day('2024-2-6');
-					document.getElementById('eungo-birth').innerText = calculate_Day('2024-5-26');
-					document.getElementById('taeyoung-birth').innerText = calculate_Day('2024-11-30');
-				}
-
-				function calculate_Day(Date) {
+				function calculate_Day(newDate) {
 					const startDate = new Date();
-					const currentDate = new Date(Date);
+					const currentDate = new Date(newDate);
 
 					const differenceInTime = currentDate - startDate;
 					const days = Math.floor(differenceInTime / (1000 * 60 * 60 * 24));
@@ -487,8 +480,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					const minutes = Math.floor((differenceInTime % (1000 * 60 * 60)) / (1000 * 60));
 					const seconds = Math.floor((differenceInTime % (1000 * 60)) / 1000);
 
-					return `${days}일${hours}시간${minutes}분${seconds}초`;
+					return `D-${days}일${hours}시간${minutes}분${seconds}초`;
 				}
+				function updateTime() {
+					document.getElementById('timePassed').innerText = calculateTimeDifference();
+					document.getElementById('hundred').innerText = calculate_Day('2024-2-6');
+					document.getElementById('eungo-birth').innerText = calculate_Day('2024-5-26');
+					document.getElementById('taeyoung-birth').innerText = calculate_Day('2024-11-30');
+					document.getElementById('one_year').innerText = calculate_Day('2024-10-30');
+				}
+
 
 				updateTime();
 				setInterval(updateTime, 1000);
