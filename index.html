@@ -153,10 +153,14 @@
 						<article id="celebrate">
 							<h2 style="text-align:center;width:100% " class="major">🎊기념일🎉</h2>
 							<table>
-								<tr><td>100❤️수정됨</td>
+								<tr><td>응고 생일🎂</td>
+									<td id="eungo-birth"></td></tr>
+								<tr><td>태영 생일🎂</td>
+									<td id="taeyoung-birth"></td></tr>
+								<tr><td>100❤</td>
 									<td id="hundred"></td></tr>
-								<tr><td>1</td>
-									<td>1</td></tr>
+								<tr><td>추가예정</td>
+									<td>추가예정</td></tr>
 							</table>
 
 						</article>
@@ -468,12 +472,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				}
 				function updateTime() {
 					document.getElementById('timePassed').innerText = calculateTimeDifference();
-					document.getElementById('hundred').innerText = calculatehundred()
+					document.getElementById('hundred').innerText = calculate_Day('2024-2-6');
+					document.getElementById('eungo-birth').innerText = calculate_Day('2024-5-26');
+					document.getElementById('taeyoung-birth').innerText = calculate_Day('2024-11-30');
 				}
 
-				function calculatehundred() {
+				function calculate_Day(Date) {
 					const startDate = new Date();
-					const currentDate = new Date('2024-2-6');
+					const currentDate = new Date(Date);
 
 					const differenceInTime = currentDate - startDate;
 					const days = Math.floor(differenceInTime / (1000 * 60 * 60 * 24));
