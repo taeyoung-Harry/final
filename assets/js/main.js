@@ -291,7 +291,7 @@
 						.on('click', function() {
 							location.hash = '';
 							document.getElementById('bg').style.display = 'block';
-							document.getElementById('bg2').style.display = 'none';
+							document.getElementById('bga').style.display = 'none';
 						});
 
 				// Prevent clicks from inside article from bubbling.
