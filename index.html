@@ -212,6 +212,7 @@
 
 		<!-- BG -->
 			<div id="bg"></div>
+			<div id="bg2"></div>
 
 		<!-- Scripts -->
 
@@ -220,11 +221,14 @@
 		<script>
 				function toggleBackground() {
 					var bg = document.getElementById('bg');
+					var bg2 = document.getElementById('bg2');
 					if(bg.style.display === 'none'){
 						bg.style.display = 'block';
+						bg2.style.display = 'none';
 					}
 					else{
 						bg.style.display = 'none';
+						bg2.style.display = 'block';
 					}
 				}
 			</script>

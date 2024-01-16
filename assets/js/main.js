@@ -291,6 +291,7 @@
 						.on('click', function() {
 							location.hash = '';
 							document.getElementById('bg').style.display = 'block';
+							document.getElementById('bg2').style.display = 'none';
 						});
 
 				// Prevent clicks from inside article from bubbling.
@@ -350,7 +351,7 @@
 							event.preventDefault();
 							event.stopPropagation();
 
-						// Show article.
+						//  article.
 							$main._show(location.hash.substr(1));
 
 					}
