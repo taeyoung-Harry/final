@@ -1179,7 +1179,7 @@ input, select, textarea {
 	-ms-transition-delay: 0.75s;
 	transition-delay: 0.75s;
 	background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/post.jpg");
-	background-size: 60% 75%,cover;
+	background-size: 80% 70%,cover;
 	background-position: center, center;
 	background-repeat: no-repeat, no-repeat;
 	z-index: 2;
