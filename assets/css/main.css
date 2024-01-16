@@ -1257,7 +1257,7 @@ input, select, textarea {
 
 #bga:before {
 	content: '';
-	display: block;
+	display: none;
 	width: 700px; /* 두 배로 키우기 */
 	height: 1000px;
 	border-radius: 0;
@@ -1284,7 +1284,7 @@ input, select, textarea {
 
 #bga:after {
 	content: '';
-	display: block;
+	display: none;
 	width: 900px; /* 두 배로 키우기 */
 	height: 900px;
 	border-radius: 50%;
@@ -1296,6 +1296,7 @@ input, select, textarea {
 	-webkit-transition-delay: 0.75s;
 	-ms-transition-delay: 0.75s;
 	transition-delay: 0.75s;
+	background-image:  url("../../images/self.jpg");
 	background-size: 50% 75%, cover;
 	background-position: center, center;
 	background-repeat: no-repeat, no-repeat;
