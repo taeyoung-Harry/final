@@ -290,6 +290,7 @@
 						.appendTo($this)
 						.on('click', function() {
 							location.hash = '';
+							document.getElementById('bg').style.display = 'block';
 						});
 
 				// Prevent clicks from inside article from bubbling.

@@ -27,7 +27,7 @@
 							<ul>
 								<li><a href="#intro">버킷리스트</a></li>
 								<li><a href="#work">버킷리스트🗽</a></li>
-								<li onclick="toggleBackground(this)"><a href="#celebrate">기념일🎉</a></li>
+								<li onclick="toggleBackground()"><a href="#celebrate">기념일🎉</a></li>
 								<!--<li><a href="#about">후보2</a></li>
 								<li><a href="#contact">후보3</a></li>-->
 							</ul>
@@ -149,7 +149,7 @@
 						</article>
 
 
-						<article id="celebrate" onclick="toggleBack(this)" class="active" >
+						<article id="celebrate" >
 							<h2 style="text-align:center;width:100% " class="major">🎊기념일🎉</h2>
 							<table>
 								<tr><td>응고 생일🎂</td>
@@ -214,31 +214,18 @@
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+
+
+
 		<script>
-			function toggleBack(element) {
-				// 배경 요소 가져오기
-				var bg = document.getElementById('bg');
-
-				// 배경이 현재 보이는지 여부 확인
-				var isVisible = bg.style.display !== 'none';
-
-				// 배경을 토글
-				if (isVisible) {
-					bg.style.display = 'none';
-				} else {
-					bg.style.display = 'block';
-				}
-			}
-		</script>
-			<script>
-				function toggleBackground(article) {
+				function toggleBackground() {
 					var bg = document.getElementById('bg');
-					if (article.classList.contains('active')) {
-						bg.style.display = 'none';
-					} else {
+					if(bg.style.display === 'none'){
 						bg.style.display = 'block';
 					}
-					article.classList.toggle('active');
+					else{
+						bg.style.display = 'none';
+					}
 				}
 			</script>
 			<script>
